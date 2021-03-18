@@ -254,6 +254,7 @@ form{
     margin:auto;
     margin-top: 5em;
     background-color: rgb(27, 24, 29);
+    min-height: fit-content;
     width:25em;
     height: 28em;
     position: relative;
