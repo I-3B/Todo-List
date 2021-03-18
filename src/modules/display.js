@@ -293,6 +293,7 @@ function projectEdit(project){
         project.setAttribute('id',input.value);
         changeActive(project);
         setProject(project,input.value);
+        clearTodoPanel();
         input.remove();
         create.remove();
         newStorage(input.value);
@@ -353,7 +354,6 @@ function retriveProject(title,todos){
     const project=document.createElement('div');
     project.setAttribute('class','project ');
     project.setAttribute('id',title);
-    refreshDisplay(todos);
     setProject(project,title);
 
 }
